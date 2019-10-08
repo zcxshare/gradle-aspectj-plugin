@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZcxAspectj.iml" filepath="$PROJECT_DIR$/ZcxAspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/app.iml" filepath="$PROJECT_DIR$/sample/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zcx_aspectj_plugin/zcx_aspectj_plugin.iml" filepath="$PROJECT_DIR$/zcx_aspectj_plugin/zcx_aspectj_plugin.iml" />
+    </modules>
+  </component>
+</project>
