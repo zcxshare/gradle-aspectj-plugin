@@ -1,7 +1,7 @@
 # ZcxAspectj
 aspectj gradle plugin
 ZcxAspectj提供在gradle中使用aspectj编译的插件,让gradle工程支持aop编程,如果仅使用gradle的aspectj插件也可以使用[https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx](https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx "gradle_plugin_android_aspectjx")
-# 依赖
+# 依赖[![](https://jitpack.io/v/xiaoXiangGuo/ZcxAspectj.svg)](https://jitpack.io/#xiaoXiangGuo/ZcxAspectj)
 项目的根build.gradle中添加
 ~~~java
 buildscript {
