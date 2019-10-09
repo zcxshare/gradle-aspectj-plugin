@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * explain: 
  */
 @Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 @Documented
 public    @interface TestA {
     String value();
