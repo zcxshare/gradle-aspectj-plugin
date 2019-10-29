@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'zcx-aspectj-plugin'
+apply plugin: 'aspectj-plugin'
 
 android {
     compileSdkVersion 27
