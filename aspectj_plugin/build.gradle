@@ -1,13 +1,13 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
 
-group = "com.zcxshare"
-version = "1.0.1"
+group = "com.github.zcxshare"
+version = "1.0.3"
 
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
-    implementation "com.android.tools.build:gradle:3.5.1"
+    implementation "com.android.tools.build:gradle:3.0.1"
     implementation 'org.aspectj:aspectjrt:1.9.4'
     implementation "org.aspectj:aspectjtools:1.9.4"
 
