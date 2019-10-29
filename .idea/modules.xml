@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZcxAspectj.iml" filepath="$PROJECT_DIR$/ZcxAspectj.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/app.iml" filepath="$PROJECT_DIR$/sample/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zcx_aspectj_plugin/zcx_aspectj_plugin.iml" filepath="$PROJECT_DIR$/zcx_aspectj_plugin/zcx_aspectj_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aspectj_plugin/aspectj_plugin.iml" filepath="$PROJECT_DIR$/aspectj_plugin/aspectj_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>
 </project>

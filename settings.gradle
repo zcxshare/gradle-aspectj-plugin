@@ -1,1 +1,1 @@
-include ':sample', ':zcx_aspectj_plugin'
+include ':sample', ':aspectj_plugin'

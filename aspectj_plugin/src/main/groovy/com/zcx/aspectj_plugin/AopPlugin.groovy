@@ -1,4 +1,4 @@
-package com.zcx.zcx_aspectj_plugin
+package com.zcx.aspectj_plugin
 
 import com.android.build.gradle.AppPlugin
 import com.android.build.gradle.LibraryPlugin
@@ -9,7 +9,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.compile.JavaCompile
 
-class ZcxPlugin implements Plugin<Project>{
+class AopPlugin implements Plugin<Project>{
 
     @Override
     void apply(Project project) {
@@ -26,7 +26,11 @@ class ZcxPlugin implements Plugin<Project>{
             variants = project.android.libraryVariants
         }
         project.dependencies {
-            compile 'org.aspectj:aspectjrt:1.9.4'
+            if (project.gradle.gradleVersion > "4.0") {
+                implementation 'org.aspectj:aspectjrt:1.9.4'
+            } else {
+                compile 'org.aspectj:aspectjrt:1.9.4'
+            }
         }
 // -showWeaveInfo，输出编织过程信息
 // -1.5 设置规范1.5，匹配java1.5
@@ -35,7 +39,13 @@ class ZcxPlugin implements Plugin<Project>{
 // -d 存放编辑产生的class文件
 // -classpath ，所有class文件，源class，java包，编织时需要用到的一些处理类
         variants.all { variant ->
-            JavaCompile javaCompile = variant.javaCompile
+            JavaCompile javaCompile
+            if (variant.hasProperty('javaCompileProvider')) {
+                //android gradle 3.3.0 +
+                javaCompile = variant.javaCompileProvider.get()
+            } else {
+                javaCompile = variant.javaCompile
+            }
             javaCompile.doLast {
                 String[] args = [
                         "-showWeaveInfo",
