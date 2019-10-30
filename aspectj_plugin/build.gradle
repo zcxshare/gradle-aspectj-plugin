@@ -19,3 +19,4 @@ uploadArchives {
         }
     }
 }
+apply from:"jcenterupload.gradle"
