@@ -12,6 +12,8 @@ buildscript {
     }
 }
 ~~~
+**(注:或者直接只添加classpath 'com.github.zcxshare:aspectj_plugin:1.0.3'也可以)**
+
 使用aspectj的model的build.gradle中
 ~~~java
 apply plugin: 'aspectj-plugin'
@@ -23,5 +25,6 @@ android {
     }
 }
 ~~~
+
 # 使用
 网上有很多使用教程[https://www.jianshu.com/p/27b997677149](https://www.jianshu.com/p/27b997677149 "AspectJ基本用法"),这里随便找的一个
